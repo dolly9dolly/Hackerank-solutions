@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+         sc.nextLine();
+        for(int i=1;i<=T;i++)
+        {
+           String s= sc.nextLine();
+           String sEven ="";
+           String sOdd= "";
+           int N = s.length();
+           for(int j =0; j<N;j++)
+           {
+            if(j==0 || j%2==0){
+               sEven +=s.charAt(j);
+               }
+            else if(j%2!=0)
+            {
+               sOdd +=s.charAt(j); 
+            }
+            }
+         System.out.println(sEven+" "+sOdd);   
+    }
+}
+}
