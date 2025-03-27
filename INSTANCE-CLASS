@@ -7,30 +7,40 @@ public class Person {
 	public Person(int initialAge) {
   		// Add some more code to run some checks on initialAge
         if(initialAge >0)
-        this.age= initialAge;
+        {
+          this.age= initialAge;  
+        }
         else if(initialAge <0)
-        System.out.println("Age is not valid, setting age to 0.");
+        {
+           System.out.println("Age is not valid, setting age to 0.");
+           this.age = 0;  
+        }
+       
 	}
 
 	public void amIOld() {
   		// Write code determining if this person's age is old and print the correct statement:
-       while(this.age<=30 && this.age >=-5)
-       {
+      
          if(this.age <13)
-        System.out.println("You are young.");
+         {
+           System.out.println("You are young."); 
+         }
+        
         else if(this.age>=13 && this.age<18)
-        System.out.println("You are a teenager.");
+        {
+             System.out.println("You are a teenager."); 
+        }
+      
         else
-        System.out.println("You are old.");	
-        break;
-       }
-       
-    }
+        {
+          System.out.println("You are old.");	  
+        }
+ }
     
 
 	public void yearPasses() {
   		// Increment this person's age.
-        age ++;
+       age ++;
 	}
 
 	public static void main(String[] args) {
